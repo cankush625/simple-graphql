@@ -4,9 +4,7 @@ Base Settings File
 
 import environ
 
-ROOT_DIR = (
-    environ.Path(__file__) - 3
-)  # (base/settings/base.py - 3 = simple_graphql/)
+ROOT_DIR = environ.Path(__file__) - 3  # (base/settings/base.py - 3 = simple_graphql/)
 APPS_DIR = ROOT_DIR
 
 ENV = environ.Env()
